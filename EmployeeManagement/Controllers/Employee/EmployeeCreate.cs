@@ -37,9 +37,9 @@ namespace EmployeeManagement.Controllers.Employee
         {
             try
             {
-                string result = string.Empty, message = string.Empty;
-                var response = await this.iEmployeeCreate.CreateNewEmployee(employeeRequest);
-                ShowMessage(employeeRequest.EmployeeId, message);
+                string result = string.Empty;
+                result = await this.iEmployeeCreate.CreateNewEmployee(employeeRequest);
+                ShowMessage(employeeRequest.EmployeeId, result);
             }
             catch (Exception)
             {

@@ -112,7 +112,7 @@
             cbGender.AutoCompleteMode = AutoCompleteMode.Suggest;
             cbGender.AutoCompleteSource = AutoCompleteSource.ListItems;
             cbGender.FormattingEnabled = true;
-            cbGender.Items.AddRange(new object[] { "Male", "Female", "Don't want to specify" });
+            cbGender.Items.AddRange(new object[] { "Male", "Female" });
             cbGender.Location = new Point(356, 194);
             cbGender.Name = "cbGender";
             cbGender.Size = new Size(182, 33);

@@ -64,7 +64,7 @@ namespace EmployeeManagement.Services.Employee
                 else
                 {
                     result = obj.code == 201 ? EmployeeConstants.SucessStatus
-                        : obj.code == 422 ? ("Please enter all employee information to create new Emplooyee. ") : obj.data.ToString();//objData.ToString()
+                        : obj.code == 422 ? ("Please enter correct data to create new Emplooyee. ") : obj.data.ToString();//objData.ToString()
 
                     employeeRequest.EmployeeId = (obj.code == 201) ? JsonConvert.DeserializeObject<EmployeeRequest>(obj.data.ToString()).EmployeeId : 0;
                 }
